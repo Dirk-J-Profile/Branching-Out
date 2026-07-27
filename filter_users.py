@@ -2,7 +2,7 @@ import json
 
 
 def filter_users_by_name(name):
-    with open("users.json", "r") as file:
+    with open("users.json", "r", encoding="utf-8") as file:
         users = json.load(file)
 
     filtered_users = [
