@@ -45,8 +45,7 @@ def filter_users_by_email(email):
     for user in filtered_users:
         print(user)
 
-
-if __name__ == "__main__":
+def main():
     filter_option = input(
         "What would you like to filter by? (name, email, age): "
     ).strip().lower()
@@ -78,3 +77,7 @@ if __name__ == "__main__":
 
     else:
         print("Filtering by that option is not yet supported.")
+
+
+if __name__ == "__main__":
+    main()
